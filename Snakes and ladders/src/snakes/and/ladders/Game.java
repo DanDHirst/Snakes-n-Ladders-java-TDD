@@ -5,6 +5,7 @@
  */
 package snakes.and.ladders;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -16,6 +17,21 @@ public class Game {
     Map<Integer, String> gameBoard;
     List<Player> players;
     int turn;
+
+    public Game(Map<Integer, String> gameBoard) {
+        this.gameBoard = gameBoard;
+        this.players = new ArrayList<>();
+    }
+
+    public void addPlayer(Player player){
+        this.players.add(player);
+    }
+    public List<Player> getPlayers(){
+        return this.players;
+    }
+    
+    
+    
     
             
     
